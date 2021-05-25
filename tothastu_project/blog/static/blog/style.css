@@ -24,7 +24,7 @@ a {
 }
 
 a:hover {
-  color: #EC9A29;
+  color: #E29578;
 }
 
 .bg-steel {
@@ -38,7 +38,7 @@ a:hover {
 }
 
 .site-header .navbar-brand:hover {
-  color: #EC9A29;
+  color: #E29578;
 }
 
 .site-header .navbar-nav .nav-link {
@@ -48,7 +48,7 @@ a:hover {
 }
 
 .site-header .navbar-nav .nav-link:hover {
-  color: #EC9A29;
+  color: #E29578;
 }
 
 .site-header .navbar-nav .nav-link.active {
@@ -57,7 +57,10 @@ a:hover {
 
 .content-section {
   background: #F7FFF7;
-  padding: 10px 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
   border: 1px solid #dddddd;
   border-radius: 10px;
   margin-bottom: 5px;
@@ -68,7 +71,7 @@ a:hover {
 }
 
 a.article-title:hover {
-  color: #EC9A29;
+  color: #E29578;
   text-decoration: none;
 }
 
@@ -85,11 +88,11 @@ a.article-title:hover {
 .article-metadata {
   padding-bottom: 10px;
   margin-bottom: 4px;
-  border-bottom: 1px solid #e3e3e3;
+  /* border-bottom: 1px solid #e3e3e3; */
 }
 
 .article-metadata a:hover {
-  color: #EC9A29;
+  color: #E29578;
   text-decoration: none;
 }
 
@@ -109,4 +112,48 @@ a.article-title:hover {
 .account-heading {
   font-size: 2.5rem;
   font-style: normal;
+}
+
+.form-group {
+  /* padding-bottom: 15px; */
+  padding: 10px 20px
+}
+
+.button-primary {
+  background-color: #E85F5C;
+  border: none;
+  border-radius: 50px;
+  color: #292F36;
+  padding: 10px 20px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button-primary:hover {
+  color: #E85F5C;
+  background-color: #292F36;
+}
+
+.button-border-primary {
+  background-color: transparent;
+  border: 2px solid #E85F5C;
+  border-radius: 50px;
+  color: #E85F5C;
+  padding: 10px 20px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  font-size: medium;
+}
+.button-border-primary:hover {
+  background-color: #E85F5C;
+  color: #F7FFF7;
+}
+
+.center {
+  text-align: center;
 }

@@ -1,22 +1,33 @@
 {% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
 {% block content %}
     <div class="content-section">
         <form method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
-                <legend class="border-bottom mb-4">Join Today</legend>
-                {{ form.as_p }}
+                <legend class="center my-5">
+                    <h3 class="font-weight-bold">Join
+                    <span style="font-family: 'Pacifico', cursive; font-size: larger; color: #E85F5C">
+                        Tothastu
+                    </span>
+                    Today!
+                    </h4>
+                </legend>
+                {{ form|crispy }}
             </fieldset>
-            <div class="form-group">
-                <button class="btn btn-outline-info" type="submit">
+            <div class="center form-group py-5">
+                <button class="button-border-primary" type="submit">
                     Sign up
                 </button>
             </div>
         </form>
-        <div class="border-top pt-3">
-            <small class="text-muted">
-                Already have an account? <a class="ml-2" href="#">Sign In</a> 
-            </small>
+        <div class="center border-top pt-3">
+            <small class="text-muted mr-5 pr-5">
+                Already have an account? 
+                <span style="display:inline-block; width: 5px;"></span>
+                <a href="#">Sign In</a>    
+            </small> 
+            
         </div>
     </div>
 {% endblock %}
