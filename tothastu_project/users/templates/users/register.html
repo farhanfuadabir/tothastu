@@ -6,12 +6,12 @@
             {% csrf_token %}
             <fieldset class="form-group">
                 <legend class="center my-5">
-                    <h3 class="font-weight-bold">Join
+                    <h3 class="font-weight-normal">Join
                     <span style="font-family: 'Pacifico', cursive; font-size: larger; color: #E85F5C">
                         Tothastu
                     </span>
                     Today!
-                    </h4>
+                    </h3>
                 </legend>
                 {{ form|crispy }}
             </fieldset>
@@ -22,10 +22,10 @@
             </div>
         </form>
         <div class="center border-top pt-3">
-            <small class="text-muted mr-5 pr-5">
+            <small class="text-muted">
                 Already have an account? 
                 <span style="display:inline-block; width: 5px;"></span>
-                <a href="#">Sign In</a>    
+                <a href="{% url 'login' %}">Sign In</a>    
             </small> 
             
         </div>
