@@ -44,7 +44,7 @@ a:hover {
 
 .site-header .navbar-nav .nav-link {
   color: #E85F5C;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: larger;
 }
 
@@ -52,7 +52,9 @@ a:hover {
   color: #E29578;
 }
 
-.site-header .navbar-nav .nav-link.active {
+.site-header .navbar-nav .nav-link:active {
+  border-bottom: #E85F5C;
+  color: #E29578;
   font-weight: 500;
 }
 
