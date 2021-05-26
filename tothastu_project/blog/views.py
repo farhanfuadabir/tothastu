@@ -1,15 +1,20 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 
 from .models import Post
 
 
 class PostList(ListView):
     model = Post
-    template_name = 'blog/home.html'
+    template_name = 'blog/home.html'    # Default: <app>/<model>_<viewtype>.html
     context_object_name = 'posts'
-    ordering = ['-post_date']   # for reverse ordering ['post_date']
+    # ordering = ['-post_date']   # for reverse ordering ['post_date']
+
+
+class PostDetail(DetailView):
+    model = Post
+
 
 def home(request):
     context = {
