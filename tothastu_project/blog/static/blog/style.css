@@ -127,9 +127,9 @@ a.article-title:hover {
 
 .button-primary {
   background-color: #E85F5C;
-  border: none;
+  border-color: transparent;
   border-radius: 50px;
-  color: #292F36;
+  color: #F7FFF7;
   padding: 10px 20px;
   font-family: 'Comfortaa', cursive;
   font-weight: 700;
@@ -140,7 +140,8 @@ a.article-title:hover {
 
 .button-primary:hover {
   color: #E85F5C;
-  background-color: #292F36;
+  background-color: #F7FFF7;
+  border: 2px solid #E85F5C;
 }
 
 .button-border-primary {

@@ -1,0 +1,28 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<div class="content-section">
+    <form method="POST">
+        {% csrf_token %}
+        <fieldset class="form-group mt-4">
+            <legend class="center my-5">
+                <h3 class="font-weight-normal">
+                    Delete Post
+                </h3>
+            </legend>
+            <p class="center">
+                <span style="font-size: larger">
+                Are you sure you want to delete <strong>{{ object.title }}</strong>?
+                </span>
+            </p>
+        </fieldset>
+        <div class="center form-group py-2">
+            <button class="button-primary" type="submit">
+                Confirm
+            </button>
+            <button class="button-border-primary" href="{% url 'post-detail' object.id %}">
+                Cancel
+            </button>
+        </div>
+    </form>
+</div>
+{% endblock %}
