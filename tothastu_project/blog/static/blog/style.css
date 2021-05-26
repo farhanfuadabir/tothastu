@@ -3,7 +3,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #292F36;
   margin-top: 5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 0rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -273,4 +273,23 @@ a.article-title:hover {
 
 .form-control-file {
   padding-top: 15px;
+}
+
+
+/* Footer */
+
+footer {
+  background-color: #292F36;
+  color: #E29578;
+  font-family: 'Comfortaa', cursive;
+  margin-top: 50px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #E29578;
+}
+.footer-link:hover {
+  text-decoration: none;
+  color: #E85F5C;
 }
