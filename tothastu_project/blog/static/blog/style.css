@@ -1,9 +1,19 @@
+html, body {
+  height: 100%;
+}
+
 body {
   background: #ffffff;
   font-family: 'Roboto', sans-serif;
   color: #292F36;
   margin-top: 5rem;
   margin-bottom: 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -283,6 +293,7 @@ footer {
   color: #E29578;
   font-family: 'Comfortaa', cursive;
   margin-top: 50px;
+  flex-shrink: 0;
 }
 
 .footer-link {
