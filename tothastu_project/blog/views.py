@@ -10,7 +10,8 @@ class PostList(ListView):
     model = Post
     template_name = 'blog/home.html'    # Default: <app>/<model>_<viewtype>.html
     context_object_name = 'posts'
-    # ordering = ['-post_date']   # for reverse ordering ['post_date']
+    ordering = ['-post_date']   # for reverse ordering ['post_date']
+    paginate_by = 2
 
 
 class PostDetail(DetailView):

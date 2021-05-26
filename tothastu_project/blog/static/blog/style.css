@@ -231,6 +231,7 @@ a.article-title:hover {
   background-color: #0F8B8D;
   color: #F7FFF7;
 }
+
 .button-small-border-secondary {
   background-color: transparent;
   border: 2px solid #0F8B8D;
@@ -246,6 +247,24 @@ a.article-title:hover {
 .button-small-border-secondary:hover {
   background-color: #0F8B8D;
   color: #F7FFF7;
+}
+
+.button-small-secondary {
+  background-color: #0F8B8D;
+  border: 2px solid #0F8B8D;
+  border-radius: 50px;
+  color: #F7FFF7;
+  padding: 5px 15px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: bolder;
+  text-align: center;
+  display: inline-block;
+  font-size: small;
+}
+.button-small-secondary:hover {
+  color: #0F8B8D;
+  background-color: #F7FFF7;
+  text-decoration: none;
 }
 
 .center {
