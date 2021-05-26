@@ -9,6 +9,7 @@ It's a blog powered by Django. Take a look at the live app at [tothastu.pythonan
 - Post submission
 - Post modification and deletion with author verification 
 - User registration and login 
+- User info and avatar modification
 - Password reset via email
 - Profile modification
 - Post filtering based on user
