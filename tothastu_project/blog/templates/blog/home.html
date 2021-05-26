@@ -19,10 +19,10 @@
 
     <!-- Pagination Code -->
     {% if is_paginated %}
-    <div class="center">
+    <div class="center pt-5">
         {% if page_obj.has_previous %}
             <a class="link-button-border button-small-border-secondary" href="?page=1">First</a>
-            <a class="link-button-border button-small-border-secondary" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+            <a class="link-button-border button-small-border-secondary" href="?page={{ page_obj.previous_page_number }}">Prev</a>
         {% endif %}
         
         {% for num in page_obj.paginator.page_range %}
