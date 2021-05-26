@@ -1,4 +1,39 @@
 {% extends "blog/base.html" %}
 {% block content %}
-    <h1>About Page</h1>
+<div class="center mb-3">
+    <h1 class="font-weight-normal">
+        <span style="font-family: 'Pacifico', cursive; font-size: larger; color: #E85F5C">
+            Tothastu
+        </span> - a blog
+    </h1>
+</div>
+<br>
+<article class="media content-section">
+    <div class="media-body mx-3 pb-4">
+        <p class="center" style="text-decoration: none; font-size: large;">
+            . . .
+            <br>
+            <br>
+            It's a blog powered by Django. Take a look at the live app at 
+            <a style="text-decoration: none; font-size: large;" href="tothastu.pythonanywhere.com">
+                tothastu.pythonanywhere.com
+            </a>
+        </p>
+        <br>
+        <h3 class="center pb-3">
+            Features
+        </h3>
+        <ul class="mx-2 ">
+            <li>Blog view with pagination</li>
+            <li>Post submission</li>
+            <li>Post modification and deletion with author verification</li>
+            <li>User info and avatar modification</li>
+            <li>User registration and login</li>
+            <li>Password reset via email</li>
+            <li>Profile modification</li>
+            <li>Post filtering based on user</li>
+        </ul>
+    </div>
+</article>
+<br>
 {% endblock %}
