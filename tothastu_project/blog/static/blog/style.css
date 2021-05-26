@@ -29,6 +29,19 @@ a:hover {
   color: #E29578;
 }
 
+a.link-button-primary:hover {
+  color: #E85F5C;
+  text-decoration: none;
+}
+a.link-button-secondary:hover {
+  color: #0F8B8D;
+  text-decoration: none;
+}
+a.link-button-border:hover {
+  color: #F7FFF7;
+  text-decoration: none;
+}
+
 .bg-steel {
   background-color: #292F36;
 }
@@ -102,6 +115,11 @@ a.article-title:hover {
   text-decoration: none;
 }
 
+.article-metadata a.link-button-border:hover {
+  color: #F7FFF7;
+  text-decoration: none;
+}
+
 .article-svg {
   width: 25px;
   height: 25px;
@@ -158,6 +176,75 @@ a.article-title:hover {
 }
 .button-border-primary:hover {
   background-color: #E85F5C;
+  color: #F7FFF7;
+}
+
+.button-small-border-primary {
+  background-color: transparent;
+  border: 2px solid #E85F5C;
+  border-radius: 50px;
+  color: #E85F5C;
+  padding: 5px 15px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: bolder;
+  text-align: center;
+  display: inline-block;
+  font-size: small;
+}
+.button-small-border-primary:hover {
+  background-color: #E85F5C;
+  color: #F7FFF7;
+}
+
+.button-secondary {
+  background-color: #0F8B8D;
+  border-color: transparent;
+  border-radius: 50px;
+  color: #F7FFF7;
+  padding: 10px 20px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button-secondary:hover {
+  color: #0F8B8D;
+  background-color: #F7FFF7;
+  border: 2px solid #0F8B8D;
+}
+
+.button-border-secondary {
+  background-color: transparent;
+  border: 2px solid #0F8B8D;
+  border-radius: 50px;
+  color: #0F8B8D;
+  padding: 10px 20px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  font-size: medium;
+}
+.button-border-secondary:hover {
+  background-color: #0F8B8D;
+  color: #F7FFF7;
+}
+.button-small-border-secondary {
+  background-color: transparent;
+  border: 2px solid #0F8B8D;
+  border-radius: 50px;
+  color: #0F8B8D;
+  padding: 5px 15px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: bolder;
+  text-align: center;
+  display: inline-block;
+  font-size: small;
+}
+.button-small-border-secondary:hover {
+  background-color: #0F8B8D;
   color: #F7FFF7;
 }
 
