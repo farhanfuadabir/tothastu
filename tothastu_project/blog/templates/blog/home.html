@@ -11,7 +11,9 @@
                     <small class="text-muted"> Posted on {{ post.post_date|date:"d M, y g:i A"}}</small>
                 </div>
                 <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
-                <p class="article-content">{{ post.content }}</p>
+                <p class="article-content">
+                    {{ post.content|truncatewords:50 }} <a href="{% url 'post-detail' post.id %}">read more</a>
+                </p>
             </div>
         </article>
         <br>
